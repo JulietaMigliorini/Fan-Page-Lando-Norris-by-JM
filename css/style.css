@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+
+#header{
+    background-color:white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header .logoHome img{
+    width: 50px;
+    padding: 5px;
+}
+#header .menuHome ul{
+    display: flex;
+    list-style: none;
+}
+#header .menuHome ul li a{
+    text-decoration: none;
+    margin: 0 10px;
+    background-color:rgb(200, 244, 42);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: black;
+}
+
+
+/* MAIN */
+#principal{
+background-color: rgb(233, 231, 231);
+display: flex;
+margin: 10px;
+}
+#principal div img{
+    width: 350px;
+    position: relative;
+    left: 800px;
+}
+#principal .tituloPrincipal{
+    font-size: 50px;
+    color: black;
+    position: relative;
+    top: 100px;
+    left: 80px;
+    display: flex;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+#principal .subtituloPrincipal{
+    font-size: 20px;
+    color: rgb(94, 94, 94);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align:center;
+    position: relative;
+    top: 100px;
+    left: 80px;
+}
+
+/* SECTION: PROXIMOS CIRCUITOS */
+
+#tituloSecciones{
+    display: flex;
+    background-color: black;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    justify-content: center;
+    margin: 15px;
+    letter-spacing: 10px;
+}
+#bloqueContenido{
+    margin: 10px;
+    padding: 10px;
+}
+#bloqueCircuito{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
+#bloqueCircuito .circuito{
+    padding: 20px 20px 20px;
+    margin: 20px;
+    background-color: rgb(246, 243, 243);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: stretch;
+}
+#bloqueCircuito .circuito img{
+    padding: 10px;
+    width: 350px;
+    height: 350px;
+}
+#bloqueCircuito .circuito .tituloCircuito{
+    color: black;
+    padding: 2px;
+    font-size: 22px;
+    text-align: center;
+}
+#bloqueCircuito .circuito .textoProximoCircuito{
+    padding: 10px;
+    color:black;
+    display: flex;
+    font-size: 15px;
+}
+
+
+/* SECTION: CONOCE MAS DE LANDON */
+
+#bloqueConociendo{
+    display: flex;
+    padding: 10px;
+}
+#bloqueConociendo .conociendo{
+    padding: 10px 10px 10px;
+    margin: 10px;
+    background-color: rgb(246, 243, 243);
+    border-radius: 10px;
+}
+#bloqueConociendo .conociendo .tituloConociendo{
+    color: rgb(238, 85, 30);
+    padding: 2px;
+    font-size: 22px;
+    text-align: center;
+}
+#bloqueConociendo .conociendo img{
+    padding: 10px;
+    width: 450px;
+    height: 450px;
+    display: flex;
+}
+#bloqueConociendo .conociendo .textoConoceLandon{
+    padding: 10px;
+    color:black;
+    display: flex;
+    font-size: 15px;
+}
+
+/* SECTION: LANDON EN YOUTUBE */
+
+#bloqueYoutube{
+    background-color: rgb(254, 153, 12);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px 10px 10px;
+    padding: 10px;
+}
+#bloqueYoutube .video iframe{
+padding: 10px;
+}
+
+/* SECTION: SU HISTORIA */
+
+#bloqueContainer{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+}
+.card{
+    display: flex;
+    align-items: center;
+    background-color: #f7f7f7;
+    margin: 15px 50px 15px;
+    border-radius: 15px;
+    gap: 15px;
+    padding: 45px;
+}
+.card .cardImagen .cardTexto{
+    width: 50%;
+}
+.card .cardImagen{
+    width: 350px;
+    height: 350px;
+}
+.card .cardTexto{
+    padding: 25px;
+}
+.card .tituloCard{
+    color: rgb(200, 244, 42);
+    font-size: 35px;
+}
+.card .textoCard{
+    font-size: medium;
+}
+
+
+
+/* TEAM MCLAREN */
+
+#bloqueMclaren{
+    display: flex;
+    padding: 10px;
+}
+#bloqueMclaren .mclaren{
+    padding: 10px 10px 10px;
+    margin: 10px;
+    background-color: rgb(255, 115, 0);
+    border-radius: 10px;
+}
+#bloqueMclaren .mclaren .tituloMclaren{
+    color: rgb(255, 255, 255);
+    padding: 2px;
+    font-size: 22px;
+    text-align: center;
+}
+#bloqueMclaren .mclaren img{
+    padding: 10px;
+    width: 450px;
+    height: 450px;
+    display: flex;
+}
+#bloqueMclaren .mclaren .textoMclaren{
+    padding: 10px;
+    color:rgb(255, 255, 255);
+    display: flex;
+    font-size: 15px;
+}
+
+
+/* FOOTER*/
+
+#footer{
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    margin: 10px 10px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#footer .paginas{
+margin: 20px;
+}
+#footer p{
+    font-size: larger;
+}
+#footer .paginas p a{
+    text-decoration: none;
+    color: white;
+}
+#footer .suscripción{
+    background-color: rgb(255, 145, 0);
+    border-radius: 10px;
+    color: white;
+    margin: 5px 5px 50px 5px;
+}
+#footer .suscripción h2{
+    color:white;
+    padding: 10px;
+}
+#footer .suscripción form{
+    color: white;
+    padding: 10px;
+}
+
