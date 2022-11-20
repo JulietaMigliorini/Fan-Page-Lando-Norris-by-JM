@@ -7,59 +7,63 @@
 /* HEADER */
 
 #header{
-    background-color:white;
-    padding: 20px;
+    height: 60px;
+    margin: 10px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
 }
 #header .logoHome img{
-    width: 50px;
+    width: 45px;
     padding: 5px;
 }
 #header .menuHome ul{
     display: flex;
     list-style: none;
 }
+
 #header .menuHome ul li a{
     text-decoration: none;
-    margin: 0 10px;
+    margin: 10px;
     background-color:rgb(200, 244, 42);
-    padding: 5px 10px;
+    padding: 5px 15px;
     border-radius: 5px;
     color: black;
+}
+#header .menuHome ul li a:hover{
+    background-color: black;
+    color: white;
 }
 
 
 /* MAIN */
 #principal{
 background-color: rgb(233, 231, 231);
-display: flex;
-margin: 10px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 10px;
+grid-template-rows: auto;
+margin: 15px;
+justify-items: center;
+align-items: center;
 }
-#principal div img{
-    width: 350px;
-    position: relative;
-    left: 800px;
-}
+
 #principal .tituloPrincipal{
-    font-size: 50px;
+    justify-content: center;
+    font-size: 60px;
     color: black;
-    position: relative;
-    top: 100px;
-    left: 80px;
-    display: flex;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #principal .subtituloPrincipal{
     font-size: 20px;
     color: rgb(94, 94, 94);
     font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align:center;
-    position: relative;
-    top: 100px;
-    left: 80px;
+}
+#principal div img{
+    width: 400px;
+    height: auto;
 }
 
 /* SECTION: PROXIMOS CIRCUITOS */
@@ -110,11 +114,16 @@ margin: 10px;
 }
 
 
-/* SECTION: CONOCE MAS DE LANDON */
+/* SECTION: CONOCE MAS DE LANDO */
 
 #bloqueConociendo{
     display: flex;
     padding: 10px;
+}
+#bloqueConociendo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
 }
 #bloqueConociendo .conociendo{
     padding: 10px 10px 10px;
@@ -130,11 +139,13 @@ margin: 10px;
 }
 #bloqueConociendo .conociendo img{
     padding: 10px;
-    width: 450px;
-    height: 450px;
+    width: 250px;
+    height: 250px;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
-#bloqueConociendo .conociendo .textoConoceLandon{
+#bloqueConociendo .conociendo .textoConoceLando{
     padding: 10px;
     color:black;
     display: flex;
@@ -161,32 +172,25 @@ padding: 10px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
+    gap: 10px;
 }
-.card{
-    display: flex;
-    align-items: center;
-    background-color: #f7f7f7;
-    margin: 15px 50px 15px;
-    border-radius: 15px;
-    gap: 15px;
-    padding: 45px;
+#bloqueContainer .card{
+    background-color: rgb(219, 219, 219);
+    margin: 10px;
+    padding: 40px;
+    align-content:  center;
+    justify-content: center;
 }
 .card .cardImagen .cardTexto{
     width: 50%;
 }
-.card .cardImagen{
-    width: 350px;
-    height: 350px;
+.card .cardImagen img{
+    width: 100%;
+    height: auto;
 }
-.card .cardTexto{
-    padding: 25px;
-}
-.card .tituloCard{
-    color: rgb(200, 244, 42);
-    font-size: 35px;
-}
-.card .textoCard{
-    font-size: medium;
+.cardImagen{
+    width: 400px;
+    height: 400px;
 }
 
 
@@ -222,7 +226,30 @@ padding: 10px;
     font-size: 15px;
 }
 
+/* CONTACTO*/
 
+#tituloContacto{
+    background-color: rgb(0, 0, 0);
+    margin: 15px;
+    padding: 5px;
+}
+#tituloContacto h1{
+    color: white;
+}
+
+#contacto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    background-color: rgb(245, 142, 8);
+    border-radius: 15px;
+    margin: 15px;
+    padding: 25px
+}
+
+#contacto .formularioContacto .imagenContacto{
+
+}
 /* FOOTER*/
 
 #footer{
